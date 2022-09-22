@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">
+  <test  name="TestRunner-1">
+  <parameter name="BROWSER" value="chrome"></parameter>
+    <classes>
+      <class name="Opportunity.CreateOpportunitywithSalesStageNegotiationReviewTest"/>
+      <class name="Opportunity.CreateOpportunitywithSalesStageProposalPriceQuoteTest"/>
+      <class name="Opportunity.CreateOpportunitywithSalesStageClosedWonTest"/>
+      <class name="Opportunity.CreateOpportunitywithSalesStageIdDecisionMakersTest"/>
+      <class name="Opportunity.CreateOpportunityWithSalesStagePerceptionAnalysisTest"/>
+    </classes>
+  </test> <!-- Test -->
+   <test  name="TestRunner-2">
+   <parameter name="BROWSER" value="firefox"></parameter>
+    <classes>
+      <class name="Opportunity.CreateOpportunitywithSalesStageNegotiationReviewTest"/>
+      <class name="Opportunity.CreateOpportunitywithSalesStageProposalPriceQuoteTest"/>
+      <class name="Opportunity.CreateOpportunitywithSalesStageClosedWonTest"/>
+      <class name="Opportunity.CreateOpportunitywithSalesStageIdDecisionMakersTest"/>
+      <class name="Opportunity.CreateOpportunityWithSalesStagePerceptionAnalysisTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
